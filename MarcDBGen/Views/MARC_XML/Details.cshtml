@@ -1,0 +1,42 @@
+﻿@model MarcDBGen.Models.MARC_XML
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MARC_XML</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ID_Broj_Knjige)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID_Broj_Knjige)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.XML)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.XML)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Datum_preuzimanja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Datum_preuzimanja)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
